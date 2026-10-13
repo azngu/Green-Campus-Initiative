@@ -1,14 +1,274 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Home | Clean Classrooms, Clear Minds</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"></head><body>
-<header><div class="wrap"><a class="brand" href="index.html">Clean Classrooms, <b>Clear Minds</b></a>
-<button id="menu" aria-expanded="false">Menu</button><nav id="nav"><a href="index.html" aria-current="page">Home</a><a href="problem.html">The Problem</a><a href="solution.html">Our Plan</a><a href="evidence.html">Evidence</a><a href="faq.html">Concerns</a><a href="get-involved.html">Get Involved</a><a href="visuals.html">Visuals</a><a href="about.html">About Us</a></nav></div></header>
-<main><div class="hero"><div class="wrap grid g2" style="align-items:center"><div><span class="tag">Proposal for the Principal and Administration</span>
-<h1>A cleaner campus makes for clearer minds.</h1><p class="lead">A low-cost, student-led plan to end campus litter, remove daily distractions and build lasting school pride.</p>
-<div class="thesis">The administration should approve and fund the student-led Green Campus Initiative. It adds waste-sorting stations and a student Clean-up Crew, restoring a clean learning environment and building campus pride.</div>
-<a class="btn" href="problem.html">See the problem</a> <a class="btn sun" href="get-involved.html">Sign the petition</a></div><div class="fig"><svg viewBox="0 0 400 300" role="img" aria-label="A clean school campus with sorting bins and students" font-family="Public Sans,sans-serif" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#cfe3ff"/><circle cx="338" cy="52" r="28" fill="#ffc933"/><rect y="240" width="400" height="60" fill="#8bc7a0"/><polygon points="62,112 200,60 338,112" fill="#0b2545"/><rect x="80" y="112" width="240" height="128" fill="#fff" stroke="#0b2545" stroke-width="3"/><rect x="178" y="178" width="44" height="62" rx="4" fill="#2457d6"/><rect x="98" y="128" width="22" height="28" fill="#ffe08a" stroke="#0b2545" stroke-width="2"/><rect x="98" y="170" width="22" height="28" fill="#ffe08a" stroke="#0b2545" stroke-width="2"/><rect x="132" y="128" width="22" height="28" fill="#ffe08a" stroke="#0b2545" stroke-width="2"/><rect x="132" y="170" width="22" height="28" fill="#ffe08a" stroke="#0b2545" stroke-width="2"/><rect x="246" y="128" width="22" height="28" fill="#ffe08a" stroke="#0b2545" stroke-width="2"/><rect x="246" y="170" width="22" height="28" fill="#ffe08a" stroke="#0b2545" stroke-width="2"/><rect x="280" y="128" width="22" height="28" fill="#ffe08a" stroke="#0b2545" stroke-width="2"/><rect x="280" y="170" width="22" height="28" fill="#ffe08a" stroke="#0b2545" stroke-width="2"/><line x1="200" y1="60" x2="200" y2="22" stroke="#0b2545" stroke-width="3"/><rect x="200" y="22" width="26" height="16" fill="#ffc933"/><rect x="36" y="206" width="8" height="40" fill="#6b4f2a"/><circle cx="40" cy="196" r="26" fill="#2f9e5b"/><rect x="361" y="206" width="8" height="40" fill="#6b4f2a"/><circle cx="365" cy="196" r="26" fill="#2f9e5b"/><rect x="96" y="252" width="24" height="34" rx="5" fill="#2457d6"/><rect x="94" y="246" width="28" height="8" rx="3" fill="#2457d6" opacity=".8"/><rect x="124" y="252" width="24" height="34" rx="5" fill="#2f9e5b"/><rect x="122" y="246" width="28" height="8" rx="3" fill="#2f9e5b" opacity=".8"/><rect x="152" y="252" width="24" height="34" rx="5" fill="#0b2545"/><rect x="150" y="246" width="28" height="8" rx="3" fill="#0b2545" opacity=".8"/><circle cx="250" cy="262" r="10" fill="#f1c9a5"/><rect x="239" y="272" width="22" height="26" rx="8" fill="#2457d6"/><circle cx="290" cy="262" r="10" fill="#f1c9a5"/><rect x="279" y="272" width="22" height="26" rx="8" fill="#ffc933"/></svg></div></div></div>
-<section class="block"><div class="wrap grid g2"><div class="card"><div class="stat">16%</div><p>of the variation in pupils' learning progress over a year is linked to the physical classroom environment, including order and cleanliness.</p></div>
-<div class="note"><h3>Why it matters</h3><p>The University of Salford "Clever Classrooms" study tracked 153 classrooms. <strong>Environment shaped results</strong> as much as teaching did. Clean, orderly space is the cheapest part of that to fix.</p></div></div></section></main><div class="next"><div class="wrap">Next page<br><a href="problem.html">The Problem &rsaquo;</a></div></div>
-<footer><div class="wrap"><p>Green Campus Initiative. A student proposal to the Principal and School Administration.</p></div></footer>
-<script>const m=document.getElementById('menu'),n=document.getElementById('nav');m.onclick=()=>{n.classList.toggle('open');m.setAttribute('aria-expanded',n.classList.contains('open'))};</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clean Classrooms, Clear Minds | Green Campus Initiative</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0b2545;
+      --blue: #2457d6;
+      --sky: #e7efff;
+      --sun: #ffc933;
+      --paper: #fbfcff;
+      --mute: #51607a;
+      --line: #d5def0;
+      --bad: #c2410c;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font: 17px/1.65 'Public Sans', system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+    }
+    h1, h2, h3 {
+      font-family: 'Bricolage Grotesque', 'Public Sans', sans-serif;
+      line-height: 1.1;
+      margin: 0 0 .5em;
+      letter-spacing: -.02em;
+    }
+    h1 { font-size: clamp(2.4rem, 6vw, 4.4rem); font-weight: 800; }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+    h3 { font-size: 1.25rem; }
+    p { margin: 0 0 1em; max-width: 68ch; }
+    a { color: var(--blue); }
+    :focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+    
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 22px; }
+    header { position: sticky; top: 0; z-index: 99; background: var(--ink); color: #fff; }
+    header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
+    .brand { font-family: 'Bricolage Grotesque'; font-weight: 800; color: #fff; text-decoration: none; font-size: 1.15rem; }
+    .brand b { color: var(--sun); }
+    nav { display: flex; gap: 4px; flex-wrap: wrap; }
+    nav a { color: #c9d8f5; text-decoration: none; padding: 8px 12px; border-radius: 8px; font-size: .92rem; font-weight: 600; }
+    nav a:hover { background: #17386b; color: #fff; }
+    nav a.active { background: var(--sun); color: var(--ink); }
+    #menu { display: none; background: none; border: 1px solid #4a6aa8; color: #fff; border-radius: 8px; padding: 8px 12px; font: inherit; }
+    
+    @media (max-width: 860px) {
+      #menu { display: block; }
+      nav { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--ink); padding: 10px 22px 18px; flex-direction: column; }
+      nav.open { display: flex; }
+    }
+    
+    .hero { background: var(--sky); border-bottom: 6px solid var(--sun); padding: 72px 0 64px; }
+    .hero p.lead { font-size: 1.25rem; color: var(--mute); }
+    .tag { display: inline-block; background: var(--ink); color: #fff; padding: 5px 12px; border-radius: 6px; font-size: .85rem; font-weight: 600; margin-bottom: 18px; }
+    .page-head { background: var(--sky); padding: 56px 0 32px; border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); }
+    section.block { padding: 56px 0; border-bottom: 1px solid var(--line); }
+    
+    .btn { display: inline-block; background: var(--blue); color: #fff; border: 0; border-radius: 10px; padding: 13px 22px; font: 700 1rem 'Public Sans'; text-decoration: none; cursor: pointer; }
+    .btn:hover { background: var(--ink); }
+    .btn.sun { background: var(--sun); color: var(--ink); }
+    .btn.sun:hover { background: #ffd75e; }
+    
+    .thesis { border-left: 8px solid var(--sun); background: #fff; padding: 24px 28px; margin: 36px 0; font-size: 1.2rem; font-weight: 600; max-width: 820px; border-radius: 0 8px 8px 0; box-shadow: 0 4px 12px rgba(11,37,69,0.05); }
+    .grid { display: grid; gap: 22px; }
+    .g2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .g3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 26px; }
+    .stat { font: 800 3.4rem/1 'Bricolage Grotesque'; color: var(--blue); }
+    .stat.warn { color: var(--bad); }
+    .note { background: var(--ink); color: #e3ecff; border-radius: 14px; padding: 26px; }
+    .note strong { color: var(--sun); }
+    
+    .pillar { border-top: 6px solid var(--blue); }
+    .pillar:nth-child(2) { border-color: var(--sun); }
+    .pillar:nth-child(3) { border-color: var(--ink); }
+    
+    table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--line); font-size: .95rem; }
+    th, td { padding: 13px 15px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { background: var(--sky); }
+    .scroll { overflow-x: auto; }
+    tfoot td { font-weight: 800; background: var(--sky); }
+    
+    details { background: #fff; border: 1px solid var(--line); border-radius: 12px; margin-bottom: 12px; }
+    summary { cursor: pointer; padding: 18px 22px; font-weight: 700; font-size: 1.05rem; }
+    details[open] summary { border-bottom: 1px solid var(--line); }
+    details div { padding: 16px 22px 6px; }
+    
+    label { display: block; font-weight: 700; font-size: .9rem; margin: 14px 0 5px; }
+    input, select, textarea { width: 100%; padding: 11px 13px; border: 1.5px solid #aebddd; border-radius: 9px; font: inherit; background: #fff; }
+    #toast { display: none; margin-top: 16px; background: #e3f6e8; border: 1px solid #8fd3a0; padding: 14px 18px; border-radius: 10px; font-weight: 600; }
+    
+    .chart { position: relative; height: 280px; }
+    .toggle { display: inline-flex; border: 2px solid var(--ink); border-radius: 10px; overflow: hidden; margin-bottom: 18px; }
+    .toggle button { border: 0; background: #fff; padding: 10px 20px; font: 700 .95rem 'Public Sans'; cursor: pointer; color: var(--ink); }
+    .toggle button[aria-pressed=true] { background: var(--ink); color: #fff; }
+    
+    .scene { height: 300px; border-radius: 14px; position: relative; overflow: hidden; transition: background .4s; }
+    .scene.before { background: #d9d3c7; }
+    .scene.after { background: #cfe8ff; }
+    .ground { position: absolute; left: 0; right: 0; bottom: 0; height: 90px; transition: background .4s; }
+    .before .ground { background: #a89f8d; }
+    .after .ground { background: #8bc7a0; }
+    .bin { position: absolute; bottom: 70px; width: 70px; height: 92px; border-radius: 6px 6px 10px 10px; }
+    .litter { position: absolute; width: 16px; height: 10px; border-radius: 3px; transition: opacity .4s; }
+    .after .litter { opacity: 0; }
+    .before .sorted { display: none; }
+    .after .plain { display: none; }
+    
+    .caption { margin-top: 16px; font-weight: 600; }
+    .avatar { width: 72px; height: 72px; border-radius: 50%; background: var(--blue); color: #fff; font: 800 1.5rem 'Bricolage Grotesque'; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+    
+    footer { background: #071a33; color: #9fb3d9; padding: 28px 0; font-size: .9rem; }
+    footer p { margin: 0; max-width: none; }
+    
+    .fig { margin: 0 0 22px; }
+    .fig svg { width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid var(--line); }
+    .fig figcaption { font-size: .88rem; color: var(--mute); font-weight: 600; margin-top: 8px; }
+    .pillar .fig { margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+
+  <!-- TOP NAVIGATION BAR -->
+  <header>
+    <div class="wrap">
+      <a class="brand" href="#home">Clean Classrooms, <b>Clear Minds</b></a>
+      <button id="menu" aria-expanded="false">Menu</button>
+      <nav id="nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#problem">The Problem</a>
+        <a href="#plan">Our Plan</a>
+        <a href="#evidence">Evidence</a>
+        <a href="#faq">Concerns</a>
+        <a href="#get-involved">Get Involved</a>
+        <a href="#visuals">Visuals</a>
+        <a href="#about">About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME / HERO SECTION -->
+    <section id="home" class="hero">
+      <div class="wrap grid g2" style="align-items:center">
+        <div>
+          <span class="tag">Proposal for the Principal and Administration</span>
+          <h1>A cleaner campus makes for clearer minds.</h1>
+          <p class="lead">A low-cost, student-led plan to end campus litter, remove daily distractions, and build lasting school pride.</p>
+          <div class="thesis">
+            The administration should approve and fund the student-led Green Campus Initiative. It adds waste-sorting stations and a student Clean-up Crew, restoring a clean learning environment and building campus pride.
+          </div>
+          <a class="btn" href="#problem">See the problem</a> 
+          <a class="btn sun" href="#get-involved">Sign the petition</a>
+        </div>
+        <div class="fig">
+          <svg viewBox="0 0 400 300" role="img" aria-label="A clean school campus with sorting bins and students" font-family="Public Sans,sans-serif" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="300" fill="#cfe3ff"/>
+            <circle cx="338" cy="52" r="28" fill="#ffc933"/>
+            <rect y="240" width="400" height="60" fill="#8bc7a0"/>
+            <polygon points="62,112 200,60 338,112" fill="#0b2545"/>
+            <rect x="80" y="112" width="240" height="128" fill="#fff" stroke="#0b2545" stroke-width="3"/>
+            <rect x="178" y="178" width="44" height="62" rx="4" fill="#2457d6"/>
+            <rect x="98" y="128" width="22" height="28" fill="#ffe08a" stroke="#0b2545" stroke-width="2"/>
+            <rect x="98" y="170" width="22" height="28" fill="#ffe08a" stroke="#0b2545" stroke-width="2"/>
+            <rect x="132" y="128" width="22" height="28" fill="#ffe08a" stroke="#0b2545" stroke-width="2"/>
+            <rect x="132" y="170" width="22" height="28" fill="#ffe08a" stroke="#0b2545" stroke-width="2"/>
+            <rect x="246" y="128" width="22" height="28" fill="#ffe08a" stroke="#0b2545" stroke-width="2"/>
+            <rect x="246" y="170" width="22" height="28" fill="#ffe08a" stroke="#0b2545" stroke-width="2"/>
+            <rect x="280" y="128" width="22" height="28" fill="#ffe08a" stroke="#0b2545" stroke-width="2"/>
+            <rect x="280" y="170" width="22" height="28" fill="#ffe08a" stroke="#0b2545" stroke-width="2"/>
+            <line x1="200" y1="60" x2="200" y2="22" stroke="#0b2545" stroke-width="3"/>
+            <rect x="200" y="22" width="26" height="16" fill="#ffc933"/>
+            <rect x="36" y="206" width="8" height="40" fill="#6b4f2a"/>
+            <circle cx="40" cy="196" r="26" fill="#2f9e5b"/>
+            <rect x="361" y="206" width="8" height="40" fill="#6b4f2a"/>
+            <circle cx="365" cy="196" r="26" fill="#2f9e5b"/>
+            <rect x="96" y="252" width="24" height="34" rx="5" fill="#2457d6"/>
+            <rect x="94" y="246" width="28" height="8" rx="3" fill="#2457d6" opacity=".8"/>
+            <rect x="124" y="252" width="24" height="34" rx="5" fill="#2f9e5b"/>
+            <rect x="122" y="246" width="28" height="8" rx="3" fill="#2f9e5b" opacity=".8"/>
+            <rect x="152" y="252" width="24" height="34" rx="5" fill="#0b2545"/>
+            <rect x="150" y="246" width="28" height="8" rx="3" fill="#0b2545" opacity=".8"/>
+            <circle cx="250" cy="262" r="10" fill="#f1c9a5"/>
+            <rect x="239" y="272" width="22" height="26" rx="8" fill="#2457d6"/>
+            <circle cx="290" cy="262" r="10" fill="#f1c9a5"/>
+            <rect x="279" y="272" width="22" height="26" rx="8" fill="#ffc933"/>
+          </svg>
+        </div>
+      </div>
+      <div class="wrap grid g2" style="margin-top: 36px;">
+        <div class="card">
+          <div class="stat">16%</div>
+          <p>of the variation in pupils' learning progress over a year is linked to the physical classroom environment, including order and cleanliness.</p>
+        </div>
+        <div class="note">
+          <h3>Why it matters</h3>
+          <p>The University of Salford "Clever Classrooms" study tracked 153 classrooms. <strong>Environment shaped results</strong> as much as teaching did. Clean, orderly space is the cheapest part of that to fix.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE PROBLEM SECTION -->
+    <section id="problem" class="block">
+      <div class="wrap">
+        <div class="page-head" style="margin-bottom: 32px; border-radius: 12px; background: transparent; padding: 0;">
+          <h1>The problem</h1>
+          <p class="lead" style="font-size:1.2rem;color:var(--mute)">Overflowing bins and scattered litter pull focus away from learning.</p>
+        </div>
+        <div class="grid g2">
+          <div>
+            <h2>Clutter is a constant distraction</h2>
+            <p>In courtyards, hallways, and homerooms, overflowing bins spill packaging and plastics onto walkways. It looks bad and creates hygiene risks.</p>
+            <p>Visual disorder is a background distraction. Students who spend breaks in a cluttered courtyard bring lower focus back to class.</p>
+            <p>With a single bin for everything, food waste mixes with recyclables. The result is odor and pests right next to study areas.</p>
+          </div>
+          <div class="grid">
+            <figure class="fig">
+              <svg viewBox="0 0 400 220" role="img" aria-label="An overflowing gray trash can with litter around it" font-family="Public Sans,sans-serif" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="220" fill="#e4e0d8"/>
+                <rect y="182" width="400" height="38" fill="#a89f8d"/>
+                <rect x="140" y="104" width="120" height="82" rx="8" fill="#6b7280"/>
+                <polygon points="132,92 262,76 268,90 136,106" fill="#4b5563"/>
+                <circle cx="160" cy="92" r="16" fill="#e5e7eb" stroke="#4b5563" stroke-width="1.5"/>
+                <circle cx="188" cy="80" r="18" fill="#d97706" stroke="#4b5563" stroke-width="1.5"/>
+                <circle cx="218" cy="86" r="15" fill="#ef4444" stroke="#4b5563" stroke-width="1.5"/>
+                <circle cx="242" cy="96" r="13" fill="#e5e7eb" stroke="#4b5563" stroke-width="1.5"/>
+                <circle cx="176" cy="68" r="11" fill="#fff" stroke="#4b5563" stroke-width="1.5"/>
+                <rect x="90" y="190" width="20" height="10" rx="3" fill="#ef4444" stroke="#4b5563"/>
+                <rect x="120" y="200" width="20" height="10" rx="3" fill="#e5e7eb" stroke="#4b5563"/>
+                <rect x="285" y="196" width="20" height="10" rx="3" fill="#d97706" stroke="#4b5563"/>
+                <rect x="320" y="188" width="20" height="10" rx="3" fill="#fff" stroke="#4b5563"/>
+                <rect x="60" y="205" width="20" height="10" rx="3" fill="#e5e7eb" stroke="#4b5563"/>
+                <rect x="350" y="202" width="20" height="10" rx="3" fill="#ef4444" stroke="#4b5563"/>
+                <path d="M275 60 q8-10 0-20 M295 66 q8-10 0-20" stroke="#8a7a3a" stroke-width="3" fill="none"/>
+                <text x="200" y="34" font-size="16" fill="#0b2545" font-weight="700" text-anchor="middle">Overflowing, unsorted bin</text>
+              </svg>
+              <figcaption>What students walk past every day.</figcaption>
+            </figure>
+            <div class="card">
+              <div class="stat warn">82%</div>
+              <p>of surveyed students say visible litter hurts their mood and concentration.</p>
+            </div>
+            <div class="card">
+              <div class="stat warn">70%</div>
+              <p>of loose litter was logged within 15 feet of an already overfilled, unsorted bin.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR PLAN / SOLUTION SECTION -->
+    <section id="plan" class="block">
+      <div class="wrap">
+        <div class="page-head" style="margin-bottom: 32px; background: transparent; padding: 0;">
+          <h1>Our plan</h1>
+          <p class="lead" style="font-size:1.2rem;color:var(--mute)">Three actions students will carry out themselves.</p>
+        </div>
+        <div class="grid g3">
+          <div class="card pillar">
+            <figure class="fig">
+              <svg viewBox="0 0 400 220" role="img" aria-label="Three color-coded bins labeled Recycle, Compost and Landfill" font-family="Public Sans,sans-serif" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="220" fill="#e7efff"/>
+                <rect y="182" width="400" height="38" fill="#b9c8e6"/>
+                <text x="200" y="38" font-size="18" fill="#0b2545" font-weight="700" text-anchor="middle">One station, three choices</text>
+                <rect x="26" y="72" width="118" height="16" rx="6" fill="#2457d6" opacity=".8"/>
+                <rect x="30" y="88" width="110" height="9
